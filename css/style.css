@@ -1,0 +1,404 @@
+/* 全体の基本設定 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #243047;
+    background-color: #fff9f0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ヘッダーのスタイル */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff9f0;
+    background-color: #fff9f0;
+    color: #243047;
+    margin: 0px;
+    padding: 8px 24px;
+    font-size: 24px;
+}
+
+/* ナビゲーションのスタイル */
+.nav {
+    display: flex;
+    gap: 32px;
+    padding: 24px;
+}
+
+.nav a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ファーストビューのスタイル */
+.hero {
+  background-image: url('../images/1st.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: #fff9f0;
+  background-position: right center;
+
+  min-height: 500px;
+  padding: 80px 8%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* キャッチコピーのスタイル */
+.hero h2 {
+  font-size: 48px;
+  color: #243047;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* 説明文のスタイル */
+.hero p {
+  font-size: 20px;
+  line-height: 2;
+  max-width: 480px;
+  margin-bottom: 32px;
+}
+
+/* ボタン横並び */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/* ボタン共有のスタイル */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 黄色のボタンのスタイル */
+.btn-primary {
+  background-color: #ffb900;
+  color: #243047;
+}
+
+/* 白色のボタンのスタイル */
+.btn-secondary {
+  background-color: #ffffff;
+  color: #243047;
+  border: 1px solid #243047;
+}
+
+/* お悩みセクション */
+/* セクション全体のスタイル */
+.problem {
+  background-color: #fff9f0;
+  padding: 80px 8%;
+  text-align: center;
+}
+
+/* 見出しのスタイル */
+.problem h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+/*　カードを横並びにするスタイル */
+.problem-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* それぞれのカードのスタイル */
+.problem-item {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+/* アイコン */
+.problem-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* カード内の文章のスタイル */
+.problem-item p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+/* ABOUT USセクション */
+/* セクション全体のスタイル */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  padding: 100px 8%;
+  background-color: #fffcf5;
+}
+
+/*　左側の文章のスタイル */
+.about-content {
+  flex: 1;
+}
+
+/* ABOUT USの見出しのスタイル */
+.about-text {
+  color: #d99b28;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;  
+}
+
+/* 見出し */
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+/* サブタイトル */
+.about h3 {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* 説明文 */
+.about-content p {
+  font-size: 18px;
+  line-height: 2;
+}
+
+/* 右側の画像のスタイル */
+.about-image {
+  flex: 1;
+  min-width: 0px;
+}
+
+.about-image img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+/* 3つの特徴セクション */
+
+/* セクション全体のスタイル */
+.feature {
+  padding: 80px 8%;
+  background-color: #fffbf3;
+}
+
+/* 見出しのスタイル */
+.feature h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* 画像と文章と横並びにするスタイル */
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  padding: 30px 40px;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+/* 2番目だけ左右を反転 */
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+
+/* 画像エリア */
+.feature-icon {
+  flex: 0 0 40%;
+  min-width: 0px;
+  text-align: center;
+}
+
+/* 画像 */
+.feature-icon img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+/* 文章エリア */
+.feature-content {
+  flex: 2;
+  min-width: 0px;
+}
+
+/* 特徴番号 */
+.feature-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d99b28;
+  margin-bottom: 16px;
+}
+/* 特徴タイトル */
+.feature-content h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+/* 特徴説明文 */
+.feature-content p {
+  line-height: 1.8;
+}
+
+/* コース紹介 */
+/* セクション全体 */
+.courses {
+  padding: 100px 8%;
+  background-color: #fffaF0;
+  text-align: center;
+}
+
+/* 見出し */
+.courses h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* 3つのカードを横並び */
+.course-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* 各カード */
+.course-item {
+  flex: 1;
+  min-width: 0;
+  background-color: #243047;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+/* コース名 */
+.course-item h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+/* 説明文 */
+.course-item p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+/* 講師紹介 */
+/* セクション全体 */
+.instructors {
+  padding: 100px 8%;
+  background-color: #fff9f0;
+}
+
+/* 見出し */
+.instructors h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* 講師カードを横並び */
+.instructor-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* 講師カード */
+.instructor-item {
+  flex: 1;
+  min-width: 100px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* 講師画像 */
+.instructor-item img {
+  width: 150px;
+  display: block;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: 30px auto 0;
+}
+
+/* 講師名 */
+.instructor-item h3 {
+  font-size: 24px;
+  margin: 16px 0;
+}
+/* 講師紹介文 */
+.instructor-item p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666666;
+  padding: 0 16px 16px;
+}
+
+/* お知らせ */
+/* セクション全体 */
+.news {
+  padding: 100px 8%;
+  background-color: #fffcf3;
+}
+/* 見出し */
+.news h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* お知らせリスト */
+.news-list {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+/* お知らせリストの各項目 */
+.news-list li {
+  padding: 24px 20px;
+  border-bottom: 1px solid #ddd;
+}
+/* マウスを乗せたとき */
+.news-list a:hover {
+  color: #d99b28;
+}
